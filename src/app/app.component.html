@@ -200,8 +200,41 @@
   <div id="cadastro">
     <h1 style="color: #fff;background-color: #e65b24;" class="text-center pt-2 pb-2">Cadastro</h1>
     <div class="container">
-      <p>O Cais Eco Residencia está localizado na Estrada de Muro Alto em um dos terrenos mais cobiçados da região. Um Resort de Alto Padrão com sensacionais Flats de 36m2 com 01 Dormitório. Com 62m2 com 02 suítes. Térreos com jardim e piscina privada de 175m2 com 04 suítes, apartamentos duplex e até 3 vagas de garagem, todas cobertas no subsolo. Área lazer completa com parque aquático, restaurante, espaço gourmet, empório, lavanderia, pet place, playground e muito mais!</p>
-    </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div id="status" class="alert" role="alert"></div>
+            <form action="http://novapaulista.centraldevendasbr.com.br/inserir_lead_cais.php" method="POST" onsubmit="return enviar(this);">
+                <h2 class="text-center">Receba uma Proposta</h2>
+                <h3 class="text-center">Preencha o formulário abaixo e receba uma oferta exclusiva!</h3>
+
+                <!-- Material input text -->
+                <div class="mb-1">
+                    <i class="fa fa-user prefix"></i>
+                    <label for="nome" class="form-label">Seu nome</label>
+                    <input type="text" id="nome" class="form-control">
+                </div>
+
+                <!-- Material input email -->
+                <div class="mb-1">
+                    <i class="fa fa-envelope prefix"></i>
+                    <label for="email" class="form-label">Seu email</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+
+                <!-- Material input email -->
+                <div class="mb-3">
+                    <i class="fa fa-phone prefix"></i>
+                    <label for="telefone" class="form-label">Seu Telefone</label>
+                    <input type="tel" id="telefone" class="form-control">
+                </div>
+                <input type="hidden" name="id_facebook" value="0">
+                <div class="text-center mt-4">
+                    <button class="btn btn-primary" style="background-color:#b13124; border-color: #b13124;" type="submit">Enviar <i class="fa fa-send ml-2"></i></button>
+                </div>
+            </form>
+          </div>
+        </div>
+  </div>
   </div>
 </div>
 <footer>
