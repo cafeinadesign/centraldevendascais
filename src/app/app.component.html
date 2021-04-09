@@ -1,26 +1,26 @@
 <div id="app">
   <div class="container">
-    <h1 class="text-center pt-5"><img src="../assets/logo.svg" alt="Logo Cais Eco Residência" width="264"></h1>
-    <nav class="navbar navbar-expand-lg navbar-light text-center">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <h1 class="text-center pt-5"><img src="../assets/logo.svg" alt="Logo Cais Eco Residência" id="logo"></h1>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler ms-auto me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav ms-auto me-auto" style="font-size: 24px;font-weight: 300;">
           <li class="nav-item">
-            <a class="nav-link" href="#empreedimento">Empreedimento</a>
+            <a id="navEmpreedimento" class="nav-link" href="#empreedimento">Empreedimento</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#fotos">Fotos</a>
+            <a id="navFotos" class="nav-link" href="#fotos">Fotos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#localizacao">Localização</a>
+            <a id="navLocalizacao" class="nav-link" href="#localizacao">Localização</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#videos">Vídeos</a>
+            <a id="navVideos" class="nav-link" href="#videos">Vídeos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#cadastro">Cadastro</a>
+            <a id="navCadastro" class="nav-link" href="#cadastro">Cadastro</a>
           </li>
         </ul>
       </div>
@@ -31,9 +31,9 @@
     <h1 style="color: #fff;background-color: #e65b24;" class="text-center pt-2 pb-2">Empreedimento</h1>
     <div class="container">
       <div class="row pb-3">
-        <div class="col-4"><img src="../assets/empreendimento.jpeg" alt="Cais Eco Residência" class="img-fluid"></div>
-        <div class="col-8">
-          <h2 class="card-title">Cais Eco Residência</h2>
+        <div class="col-md-4"><img src="../assets/empreendimento.jpeg" alt="Cais Eco Residência" class="img-fluid"></div>
+        <div class="col-md-8">
+          <h2 class="card-title mt-2">Cais Eco Residência</h2>
           <p>O Cais Eco Residencia está localizado na Estrada de Muro Alto em um dos terrenos mais cobiçados da região. Um Resort de Alto Padrão com sensacionais Flats de 36m2 com 01 Dormitório. Com 62m2 com 02 suítes. Térreos com jardim e piscina privada de 175m2 com 04 suítes, apartamentos duplex e até 3 vagas de garagem, todas cobertas no subsolo. Área lazer completa com parque aquático, restaurante, espaço gourmet, empório, lavanderia, pet place, playground e muito mais!</p>
           <p class="card-text"><small class="text-muted">Praia de Muro Alto - PE</small></p>
         </div>
@@ -42,7 +42,7 @@
   </div>
   <div id="fotos" style="background-color: #f6f2e6;">
     <h1 style="color: #fff;background-color: #5e622d;" class="text-center pt-2 pb-2 mb-0">Fotos</h1>
-    <div class="container">
+    <div class="container-md ps-0 pe-0">
       <div id="carouselFotos" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -167,12 +167,7 @@
   </div>
   <div id="localizacao" style="background-color: #f8efe6;">
     <h1 style="color: #fff;background-color: #b13124;" class="text-center pt-2 pb-2">Localização</h1>
-    <address>
-      <p class="lead text-center">
-        Estrada Acesso para Praia de Muro Alto e Camboa, 1000 - Muro Alto, Ipojuca – PE
-      </p>
-    </address>
-    <div class="container">
+    <div class="container-md ps-0 pe-0">
       <div id="carouselLocalizacao" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -195,17 +190,35 @@
         </button>
       </div>
     </div>
+    <div class="container">
+    <p class="lead text-center mb-0 pb-3">
+      Estrada Acesso para Praia de Muro Alto e Camboa, 1000 - Muro Alto, Ipojuca – PE
+    </p>
+    </div>
   </div>
   <div id="videos">
     <h1 style="color: #fff;background-color: #ea951f;" class="text-center pt-2 pb-2">Vídeos</h1>
-    <div class="container text-center pb-3">
-      <!-- <video width="100%" height="auto" controls>
-        <source src="../assets/videos/episodio_01_-_apresentacao.mp4" type="video/mp4">
-      </video> -->
-      <a href="https://drive.google.com/drive/u/0/folders/1nMO39-WyvK_qblt00OTo_AwjV1XNZTHE" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #5e622d">
-        <img src="../assets/qr_code_videos.jpeg" alt="QR Code" class="mb-1"><br>
-        Leia ou clique no QR Code pra assistir nossas série de vídeos
-      </a>
+    <div class="container mb-3">
+      <ul class="nav nav-tabs nav-fill" id="videosTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="apresentacao-tab" data-bs-toggle="tab" data-bs-target="#apresentacao" type="button" role="tab" aria-controls="apresentacao" aria-selected="true">Apresentação</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="empreendimento-tab" data-bs-toggle="tab" data-bs-target="#empreendimento" type="button" role="tab" aria-controls="empreendimento" aria-selected="true">Empreendimento</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="investimento-tab" data-bs-toggle="tab" data-bs-target="#investimento" type="button" role="tab" aria-controls="investimento" aria-selected="false">Investimento</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="sustentabilidade-tab" data-bs-toggle="tab" data-bs-target="#sustentabilidade" type="button" role="tab" aria-controls="sustentabilidade" aria-selected="false">Sustentabilidade</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="videosTabContent">
+        <div class="tab-pane fade show active" id="apresentacao" role="tabpanel" aria-labelledby="apresentacao-tab"><video src="../assets/videos/episodio_01_apresentacao.mp4" class="d-block w-100" controls></video></div>
+        <div class="tab-pane fade" id="empreendimento" role="tabpanel" aria-labelledby="empreendimento-tab"><video src="../assets/videos/episodio_02_empreendimento.mp4" class="d-block w-100" controls></video></div>
+        <div class="tab-pane fade" id="investimento" role="tabpanel" aria-labelledby="investimento-tab"><video src="../assets/videos/episodio_03_ivestimento.mp4" class="d-block w-100" controls></video></div>
+        <div class="tab-pane fade" id="sustentabilidade" role="tabpanel" aria-labelledby="sustentabilidade-tab"><video src="../assets/videos/episodio_04_sustentabilidade.mp4" class="d-block w-100" controls></video></div>
+      </div>
     </div>
   </div>
   <div id="cadastro">
@@ -213,10 +226,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 offset-md-3">
-          <div id="status" class="alert" role="alert"></div>
+          <!-- <div id="status" class="alert" role="alert"></div> -->
             <form action="http://novapaulista.centraldevendasbr.com.br/inserir_lead_cais.php" method="POST" onsubmit="return enviar(this);">
                 <h2 class="text-center">Receba uma Proposta</h2>
-                <h3 class="text-center">Preencha o formulário abaixo e receba uma oferta exclusiva!</h3>
+                <p class="lead text-center">Preencha o formulário abaixo e receba uma oferta exclusiva!</p>
 
                 <!-- Material input text -->
                 <div class="mb-1">
@@ -240,27 +253,27 @@
                 </div>
                 <input type="hidden" name="id_facebook" value="0">
                 <div class="text-center mt-4">
-                    <button class="btn btn-primary" style="background-color:#b13124; border-color: #b13124;" type="submit">Enviar <i class="fa fa-send ml-2"></i></button>
+                    <button class="btn btn-primary" style="background-color:#b13124; border-color: #b13124;min-width: 180px;" type="submit">Enviar <i class="fa fa-send ml-2"></i></button>
                 </div>
             </form>
           </div>
-        </div>
-  </div>
+      </div>
+    </div>
   </div>
 </div>
 <footer>
-	<div class="mt-5 font-weight-light rodape">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-6 text-center text-lg-left">
-					<p class="mb-0">
-						© 2021 Central de vendas.</p>
-				</div>
-				<div class="col-6 text-center text-lg-right developed-by">
-					<p class="py-2">
-						Desenvolvido por: <a href="https://cafeinadesign.github.io/">Cafeína Design</a></p>					<p></p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="conteiner mt-5 pt-5">
+    <div class="text-center">
+      <a href="https://drive.google.com/drive/u/0/folders/1nMO39-WyvK_qblt00OTo_AwjV1XNZTHE" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #5e622d">
+        <img src="../assets/qr_code_videos.jpeg" alt="QR Code" class="mb-1"><br>
+        Leia ou clique no QR Code pra assistir nossas série de vídeos
+      </a>
+    </div>
+  </div>
+  <div class="text-center mt-5">
+    <p>© 2021 Central de Vendas</p>
+    <p class="pt-0 pb-4">
+      <small>Desenvolvido por: <a href="https://cafeinadesign.github.io/">Cafeína Design</a></small>
+    </p>
+  </div>
 </footer>

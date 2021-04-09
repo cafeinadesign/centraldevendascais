@@ -38,10 +38,7 @@ $centraldevendascais-theme: mat-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 html, body { height: 100%; }
-html {
-  background-color: #fdf6d9;
-}
 body {
-  background: transparent url('assets/bg.png') no-repeat center bottom;
+  background-color: #fdf6d9;
   color: #000;
 }
