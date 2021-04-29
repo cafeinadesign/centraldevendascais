@@ -40,6 +40,52 @@ a#navCadastro:focus,
 a#navCadastro:hover {
   border-color: #e65b24;
 }
+#empreendimento {
+  h1 {
+    position: relative;
+    top: -17px;
+    padding-top: 28px;
+    height: 78px;
+    color: #fdf6d9;
+    background: url("../assets/titulo1.svg");
+  }
+}
+#fotos {
+  h1 {
+    padding-top: 20px;
+    height: 78px;
+    color: #fdf6d9;
+    background: url("../assets/titulo2.svg");
+  }
+}
+#localizacao {
+  h1 {
+    position: relative;
+    top: -25px;
+    padding-top: 20px;
+    height: 78px;
+    color: #fdf6d9;
+    background: url("../assets/titulo3.svg");
+  }
+}
+#videos {
+  h1 {
+    position: relative;
+    top: -16px;
+    padding-top: 20px;
+    height: 78px;
+    color: #fdf6d9;
+    background: url("../assets/titulo4.svg");
+  }
+}
+#cadastro {
+  h1 {
+    padding-top: 20px;
+    height: 78px;
+    color: #fdf6d9;
+    background: url("../assets/titulo5.svg");
+  }
+}
 /*
  * VÍDEOS
 */
