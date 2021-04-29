@@ -40,49 +40,40 @@ a#navCadastro:focus,
 a#navCadastro:hover {
   border-color: #e65b24;
 }
-#empreendimento {
+section {
+  background-color: #f6f2e6;
+  h1 {
+    padding-top: 28px;
+    padding-bottom: 18px;
+    color: #f6f2e6;
+    background-position: center;
+  }
+}
+section#empreendimento {
   h1 {
     position: relative;
     top: -17px;
-    padding-top: 28px;
-    height: 78px;
-    color: #fdf6d9;
     background: url("../assets/titulo1.svg");
   }
 }
 #fotos {
   h1 {
-    padding-top: 20px;
-    height: 78px;
     color: #fdf6d9;
     background: url("../assets/titulo2.svg");
   }
 }
 #localizacao {
   h1 {
-    position: relative;
-    top: -25px;
-    padding-top: 20px;
-    height: 78px;
-    color: #fdf6d9;
     background: url("../assets/titulo3.svg");
   }
 }
 #videos {
   h1 {
-    position: relative;
-    top: -16px;
-    padding-top: 20px;
-    height: 78px;
-    color: #fdf6d9;
     background: url("../assets/titulo4.svg");
   }
 }
 #cadastro {
   h1 {
-    padding-top: 20px;
-    height: 78px;
-    color: #fdf6d9;
     background: url("../assets/titulo5.svg");
   }
 }
@@ -126,7 +117,7 @@ button#sustentabilidade-tab.active {
   border-color: #e65b24;
 }
 footer {
-  background: transparent url("../assets/bg.png") no-repeat center top;
+  background: #f6f2e6 url("../assets/bg.png") no-repeat center top;
   background-size: auto 100%;
 }
 // Small devices (landscape phones, 576px and up)
@@ -143,7 +134,7 @@ footer {
     padding: 12px 6px;
   }
   footer {
-    background: transparent url("../assets/bg.png") no-repeat center top;
+    background: #f6f2e6 url("../assets/bg.png") no-repeat center top;
     background-size: 2427px 616px;
   }
 }
