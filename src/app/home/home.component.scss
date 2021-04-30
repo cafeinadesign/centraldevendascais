@@ -1,0 +1,82 @@
+section {
+  background-color: #f6f2e6;
+  h1 {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    color: #f6f2e6;
+    background-position: center;
+  }
+}
+section#empreendimento {
+  h1 {
+    position: relative;
+    top: -17px;
+    background: url("../../assets/titulo1.svg");
+  }
+}
+#fotos {
+  h1 {
+    color: #fdf6d9;
+    background: url("../../assets/titulo2.svg");
+  }
+}
+#localizacao {
+  h1 {
+    background: url("../../assets/titulo3.svg");
+  }
+}
+#videos {
+  h1 {
+    background: url("../../assets/titulo4.svg");
+  }
+}
+#cadastro {
+  h1 {
+    background: url("../../assets/titulo5.svg");
+  }
+}
+/*
+ * VÍDEOS
+*/
+button.nav-link {
+  font-size: 12px;
+  padding: 2px 1px;
+}
+button#apresentacao-tab {
+  color: #e65b24;
+}
+button#apresentacao-tab.active {
+  color: white;
+  background-color: #e65b24;
+  border-color: #e65b24;
+}
+button#caisecoresidencia-tab {
+  color: #5e622d;
+}
+button#caisecoresidencia-tab.active {
+  color: white;
+  background-color: #5e622d;
+  border-color: #5e622d;
+}
+button#investimento-tab {
+  color: #b13124;
+}
+button#investimento-tab.active {
+  color: white;
+  background-color: #b13124;
+  border-color: #b13124;
+}
+button#sustentabilidade-tab {
+  color: #e65b24;
+}
+button#sustentabilidade-tab.active {
+  color: white;
+  background-color: #e65b24;
+  border-color: #e65b24;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  #logo {
+    width: 264px;
+  }
+}
