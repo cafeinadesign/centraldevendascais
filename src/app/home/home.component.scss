@@ -21,7 +21,9 @@ section#empreendimento {
   }
 }
 #localizacao {
+  background-color: #f8efe6;
   h1 {
+    color: #f8efe6;
     background: url("../../assets/titulo3.svg");
   }
 }
@@ -33,6 +35,14 @@ section#empreendimento {
 #cadastro {
   h1 {
     background: url("../../assets/titulo5.svg");
+  }
+  mat-form-field {
+    width: 100%;
+  }
+  button {
+    display: block;
+    min-width: 180px;
+    margin: 0 auto;
   }
 }
 /*

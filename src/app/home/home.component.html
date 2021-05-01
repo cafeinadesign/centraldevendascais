@@ -152,50 +152,60 @@
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <!-- <div id="status" class="alert" role="alert"></div> -->
+        <!-- <h2 class="text-center">Receba uma Proposta</h2> -->
+        <p class="lead text-center mb-3">
+          Compre com condições de pre-lançamento,<br />lançamento 01 de maio
+        </p>
         <form
-          action="http://novapaulista.centraldevendasbr.com.br/inserir_lead_cais.php"
-          method="POST"
-          onsubmit="return enviar(this);"
+          id="cardForm"
+          [formGroup]="cardForm"
+          (ngSubmit)="onSubmit(cardForm.value)"
+          [hidden]="carregando"
         >
-          <h2 class="text-center">Receba uma Proposta</h2>
-          <p class="lead text-center">
-            Preencha o formulário abaixo e receba uma oferta exclusiva!
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Seu nome</mat-label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                formControlName="nome"
+                matInput
+                placeholder="Seu nome"
+                required
+              />
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+            <br />
+            <mat-form-field appearance="outline">
+              <mat-label>Seu e-mail</mat-label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                formControlName="email"
+                matInput
+                placeholder="Seu e-mail"
+              />
+              <mat-icon matSuffix>mail</mat-icon>
+            </mat-form-field>
+            <br />
+            <mat-form-field appearance="outline">
+              <mat-label>Seu telefone</mat-label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                formControlName="telefone"
+                matInput
+                placeholder="Seu telefone"
+              />
+              <mat-icon matSuffix>phone</mat-icon>
+            </mat-form-field>
           </p>
-
-          <!-- Material input text -->
-          <div class="mb-1">
-            <i class="fa fa-user prefix"></i>
-            <label for="nome" class="form-label">Seu nome</label>
-            <input type="text" id="nome" class="form-control" />
-          </div>
-
-          <!-- Material input email -->
-          <div class="mb-1">
-            <i class="fa fa-envelope prefix"></i>
-            <label for="email" class="form-label">Seu email</label>
-            <input type="email" id="email" class="form-control" />
-          </div>
-
-          <!-- Material input email -->
-          <div class="mb-3">
-            <i class="fa fa-phone prefix"></i>
-            <label for="telefone" class="form-label">Seu Telefone</label>
-            <input type="tel" id="telefone" class="form-control" />
-          </div>
-          <input type="hidden" name="id_facebook" value="0" />
-          <div class="text-center mt-4">
-            <button
-              class="btn btn-primary"
-              style="
-                background-color: #b13124;
-                border-color: #b13124;
-                min-width: 180px;
-              "
-              type="submit"
-            >
-              Enviar <i class="fa fa-send ml-2"></i>
-            </button>
-          </div>
+          <button type="submit" mat-raised-button color="primary">
+            Enviar
+          </button>
         </form>
       </div>
     </div>

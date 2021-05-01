@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, LOCALE_ID } from '@angular/core';
+import { BrowserModule, Title } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
 import { FotosComponent } from './fotos/fotos.component';
 import { AreasComunsComponent } from './fotos/areas-comuns/areas-comuns.component';
 import { CordelComponent } from './fotos/cordel/cordel.component';
@@ -14,7 +16,12 @@ import { XiloComponent } from './fotos/xilo/xilo.component';
 import { HomeComponent } from './home/home.component';
 import { MeuCaisComponent } from './fotos/meu-cais/meu-cais.component';
 
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,9 +40,15 @@ import {MatTabsModule} from '@angular/material/tabs';
     AppRoutingModule,
     ScullyLibModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    HttpClientModule,
+    MatIconModule,
+    MatTabsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [Title, { provide: LOCALE_ID, useValue: 'pt-BR' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
