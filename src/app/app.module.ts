@@ -14,6 +14,8 @@ import { XiloComponent } from './fotos/xilo/xilo.component';
 import { HomeComponent } from './home/home.component';
 import { MeuCaisComponent } from './fotos/meu-cais/meu-cais.component';
 
+import {MatTabsModule} from '@angular/material/tabs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,13 +26,14 @@ import { MeuCaisComponent } from './fotos/meu-cais/meu-cais.component';
     RooftopPoesiaComponent,
     XiloComponent,
     HomeComponent,
-    MeuCaisComponent
+    MeuCaisComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ScullyLibModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

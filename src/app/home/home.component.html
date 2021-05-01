@@ -97,115 +97,53 @@
 </section>
 <section id="videos">
   <h1 class="text-center">Vídeos</h1>
-  <div class="container">
-    <ul class="nav nav-tabs nav-fill" id="videosTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="apresentacao-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#apresentacao"
-          type="button"
-          role="tab"
-          aria-controls="apresentacao"
-          aria-selected="true"
-        >
-          Apresentação
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="caisecoresidencia-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#caisecoresidencia"
-          type="button"
-          role="tab"
-          aria-controls="caisecoresidencia"
-          aria-selected="false"
-        >
-          Empreendimento
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="investimento-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#investimento"
-          type="button"
-          role="tab"
-          aria-controls="investimento"
-          aria-selected="false"
-        >
-          Investimento
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="sustentabilidade-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#sustentabilidade"
-          type="button"
-          role="tab"
-          aria-controls="sustentabilidade"
-          aria-selected="false"
-        >
-          Sustentabilidade
-        </button>
-      </li>
-    </ul>
-    <div class="tab-content" id="videosTabContent">
-      <div
-        class="tab-pane fade show active"
-        id="apresentacao"
-        role="tabpanel"
-        aria-labelledby="apresentacao-tab"
-      >
+  <div class="container pb-3">
+    <mat-tab-group mat-align-tabs="start">
+      <mat-tab label="Quem são os empreendedores">
         <video
+          playsinline=""
+          data-media-locale="br"
+          preload="none"
+          aria-hidden="true"
           src="../assets/videos/episodio_01_apresentacao.mp4"
+          poster="../assets/videos/episodio_01_apresentacao.jpg"
           class="d-block w-100"
           controls
         ></video>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="caisecoresidencia"
-        role="tabpanel"
-        aria-labelledby="caisecoresidencia-tab"
-      >
+      </mat-tab>
+      <mat-tab label="Os empreendedores comentam o projeto">
         <video
+          playsinline=""
+          data-media-locale="br"
+          preload="none"
+          aria-hidden="true"
           src="../assets/videos/episodio_02_empreendimento.mp4"
+          poster="../assets/videos/episodio_02_empreendimento.jpg"
           class="d-block w-100"
           controls
         ></video>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="investimento"
-        role="tabpanel"
-        aria-labelledby="investimento-tab"
-      >
+      </mat-tab>
+      <mat-tab label="Entrevista completa">
         <video
           src="../assets/videos/episodio_03_ivestimento.mp4"
+          poster="../assets/videos/episodio_03_ivestimento.jpg"
           class="d-block w-100"
           controls
-        ></video>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="sustentabilidade"
-        role="tabpanel"
-        aria-labelledby="sustentabilidade-tab"
-      >
+        ></video
+      ></mat-tab>
+      <mat-tab label="O empreendimento por Rafael Zulu">
         <video
+          playsinline=""
+          data-media-locale="br"
+          preload="none"
+          aria-hidden="true"
           src="../assets/videos/episodio_04_sustentabilidade.mp4"
+          poster="../assets/videos/episodio_04_sustentabilidade.jpg"
           class="d-block w-100"
           controls
-        ></video>
-      </div>
-    </div>
+        ></video
+      ></mat-tab>
+    </mat-tab-group>
   </div>
 </section>
 <section id="cadastro">
