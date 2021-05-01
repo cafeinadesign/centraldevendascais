@@ -29,6 +29,8 @@
     "@scullyio/scully": "^1.0.0",
     "bootstrap": "^5.0.0-beta3",
     "jquery": "^3.6.0",
+    "lottie-web": "^5.7.8",
+    "ngx-lottie": "^6.4.0",
     "popper.js": "^1.16.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

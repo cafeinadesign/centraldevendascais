@@ -156,11 +156,22 @@
         <p class="lead text-center mb-3">
           Compre com condições de pre-lançamento,<br />lançamento 01 de maio
         </p>
+        <div style="margin: 30px auto 0; width: 33%">
+          <ng-lottie
+            [options]="sucesso"
+            (animationCreated)="animationCreated($event)"
+            [hidden]="!pagamentoProcessado"
+          ></ng-lottie>
+          <p class="text-center mb-3">Em breve retornaremos seu contato.</p>
+        </div>
+        <div style="margin: 30px auto 0; width: 33%" [hidden]="!carregando">
+          <ng-lottie [options]="options"></ng-lottie>
+        </div>
         <form
           id="cardForm"
           [formGroup]="cardForm"
           (ngSubmit)="onSubmit(cardForm.value)"
-          [hidden]="carregando"
+          [hidden]="carregando || pagamentoProcessado"
         >
           <p>
             <mat-form-field appearance="outline">
