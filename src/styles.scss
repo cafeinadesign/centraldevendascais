@@ -5,17 +5,162 @@
 @import "~bootstrap/scss/bootstrap";
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-vermelho: (
+  50: #fcebe5,
+  100: #f8cebd,
+  200: #f3ad92,
+  300: #ee8c66,
+  400: #ea7445,
+  500: #e65b24,
+  600: #e35320,
+  700: #df491b,
+  800: #db4016,
+  900: #d52f0d,
+  A100: #ffffff,
+  A200: #ffd4ce,
+  A400: #ffa89b,
+  A700: #ff9281,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+/* For use in src/lib/core/theming/_palette.scss */
+$md-verde: (
+  50: #ecece6,
+  100: #cfd0c0,
+  200: #afb196,
+  300: #8e916c,
+  400: #767a4d,
+  500: #5e622d,
+  600: #565a28,
+  700: #4c5022,
+  800: #42461c,
+  900: #313411,
+  A100: #f1ff72,
+  A200: #ecff3f,
+  A400: #e7ff0c,
+  A700: #d9f100,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+/* For use in src/lib/core/theming/_palette.scss */
+$md-vinho: (
+  50: #f6e6e5,
+  100: #e8c1bd,
+  200: #d89892,
+  300: #c86f66,
+  400: #bd5045,
+  500: #b13124,
+  600: #aa2c20,
+  700: #a1251b,
+  800: #981f16,
+  900: #88130d,
+  A100: #ffbbb8,
+  A200: #ff8a85,
+  A400: #ff5852,
+  A700: #ff4039,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #ffffff,
+  ),
+);
+/* For use in src/lib/core/theming/_palette.scss */
+$md-laranja: (
+  50: #fcf2e4,
+  100: #f9dfbc,
+  200: #f5ca8f,
+  300: #f0b562,
+  400: #eda541,
+  500: #ea951f,
+  600: #e78d1b,
+  700: #e48217,
+  800: #e17812,
+  900: #db670a,
+  A100: #ffffff,
+  A200: #ffe4d2,
+  A400: #ffc59f,
+  A700: #ffb685,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+// Create a config with the default typography levels.
+$config: mat-typography-config();
+
 // Be sure that you only ever include this mixin once!
 @include mat-core();
+
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config(
+  $font-family: '"Avenir", sans-serif',
+);
+
+@include angular-material-typography($custom-typography);
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$centraldevendascais-primary: mat-palette($mat-indigo);
-$centraldevendascais-accent: mat-palette($mat-pink, A200, A100, A400);
+$centraldevendascais-primary: mat-palette($md-vermelho);
+$centraldevendascais-accent: mat-palette($md-verde);
 
 // The warn palette is optional (defaults to red).
-$centraldevendascais-warn: mat-palette($mat-red);
+$centraldevendascais-warn: mat-palette($md-vinho);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
@@ -41,8 +186,9 @@ body {
   height: 100%;
 }
 body {
+  background: #f6f2e6;
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Archivo";
 }
 h1 {
   font-size: 30px;
