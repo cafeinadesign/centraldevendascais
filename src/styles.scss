@@ -73,39 +73,6 @@ $md-verde: (
   ),
 );
 /* For use in src/lib/core/theming/_palette.scss */
-$md-vinho: (
-  50: #f6e6e5,
-  100: #e8c1bd,
-  200: #d89892,
-  300: #c86f66,
-  400: #bd5045,
-  500: #b13124,
-  600: #aa2c20,
-  700: #a1251b,
-  800: #981f16,
-  900: #88130d,
-  A100: #ffbbb8,
-  A200: #ff8a85,
-  A400: #ff5852,
-  A700: #ff4039,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #000000,
-    400: #ffffff,
-    500: #ffffff,
-    600: #ffffff,
-    700: #ffffff,
-    800: #ffffff,
-    900: #ffffff,
-    A100: #000000,
-    A200: #000000,
-    A400: #000000,
-    A700: #ffffff,
-  ),
-);
-/* For use in src/lib/core/theming/_palette.scss */
 $md-laranja: (
   50: #fcf2e4,
   100: #f9dfbc,
@@ -160,7 +127,7 @@ $centraldevendascais-primary: mat-palette($md-vermelho);
 $centraldevendascais-accent: mat-palette($md-verde);
 
 // The warn palette is optional (defaults to red).
-$centraldevendascais-warn: mat-palette($md-vinho);
+$centraldevendascais-warn: mat-palette($md-laranja);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
@@ -186,7 +153,9 @@ body {
   height: 100%;
 }
 body {
-  background: #f6f2e6;
+  // background: #f6f2e6;
+  background: #f6f2e6 url("assets/bg.svg") no-repeat fixed center -40px;
+  background-size: 1137px 282px;
   margin: 0;
   font-family: "Archivo";
 }
@@ -201,4 +170,13 @@ p {
 }
 small.text-muted {
   font-size: 14px;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  body {
+    background: #f6f2e6 url("assets/bg.svg") no-repeat fixed center -40px;
+    background-size: 2275px 564px;
+    margin: 0;
+    font-family: "Archivo";
+  }
 }

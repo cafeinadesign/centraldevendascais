@@ -44,6 +44,10 @@ section#empreendimento {
     min-width: 180px;
     margin: 0 auto;
   }
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: white;
+    border-radius: 5px;
+  }
 }
 /*
  * VÍDEOS

@@ -1,5 +1,6 @@
 #app {
-  background: transparent url("../assets/bg.png") no-repeat center -40px;
+  background: transparent url("../assets/ilustracao.png") no-repeat scroll
+    center 32px;
   background-size: 256%;
 }
 #logo {
@@ -29,14 +30,20 @@ a#navCadastro:hover {
   border-color: #e65b24;
 }
 footer {
-  background: #f6f2e6 url("../assets/bg.png") no-repeat center top;
+  background: #f6f2e6 url("../assets/bg.svg") no-repeat center top;
   background-size: auto 100%;
+}
+#rodape {
+  background: transparent url("../assets/ilustracao.png") no-repeat scroll
+    center 32px;
+  background-size: 300%;
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   #app {
-    background: transparent url("../assets/bg.png") no-repeat center -40px;
-    background-size: 2427px 616px;
+    background: transparent url("../assets/ilustracao.png") no-repeat scroll
+      center -40px;
+    background-size: 2026px 345px;
   }
   #logo {
     width: 264px;

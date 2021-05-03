@@ -175,7 +175,7 @@
           [hidden]="carregando || pagamentoProcessado"
         >
           <p>
-            <mat-form-field appearance="outline">
+            <mat-form-field color="warn" appearance="outline">
               <mat-label>Seu nome</mat-label>
               <input
                 type="text"
@@ -186,10 +186,11 @@
                 placeholder="Seu nome"
                 required
               />
-              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-icon color="warn" matSuffix>
+                sentiment_very_satisfied
+              </mat-icon>
             </mat-form-field>
-            <br />
-            <mat-form-field appearance="outline">
+            <mat-form-field color="primary" appearance="outline">
               <mat-label>Seu e-mail</mat-label>
               <input
                 type="email"
@@ -199,10 +200,10 @@
                 matInput
                 placeholder="Seu e-mail"
               />
-              <mat-icon matSuffix>mail</mat-icon>
+              <mat-icon color="primary" matSuffix>mail</mat-icon>
             </mat-form-field>
             <br />
-            <mat-form-field appearance="outline">
+            <mat-form-field color="accent" appearance="outline">
               <mat-label>Seu telefone</mat-label>
               <input
                 type="tel"
@@ -212,12 +213,10 @@
                 matInput
                 placeholder="Seu telefone"
               />
-              <mat-icon matSuffix>phone</mat-icon>
+              <mat-icon color="accent" matSuffix>phone</mat-icon>
             </mat-form-field>
           </p>
-          <button type="submit" mat-raised-button color="primary">
-            Enviar
-          </button>
+          <button color="accent" type="submit" mat-raised-button>Enviar</button>
         </form>
       </div>
     </div>
