@@ -4,7 +4,7 @@
   <img
     src="../assets/cais-eco-residencia.jpg"
     alt="Cais Eco Residência"
-    width="100%"
+    class="img-fluid"
   />
 </picture>
 <section id="empreendimento">
@@ -12,11 +12,18 @@
   <div class="container">
     <div class="row pb-3">
       <div class="col-md-4 d-none d-sm-block">
-        <img
-          src="../assets/empreendimento.jpeg"
-          alt="Cais Eco Residência"
-          class="img-fluid"
-        />
+        <picture>
+          <source
+            srcset="../assets/cais-eco-residencia.webp"
+            type="image/webp" />
+          <source
+            srcset="../assets/cais-eco-residencia.jpg"
+            type="image/jpeg" />
+          <img
+            src="../assets/cais-eco-residencia.jpg"
+            alt="Cais Eco Residência"
+            class="img-fluid"
+        /></picture>
       </div>
       <div class="col-md-8">
         <h2 class="card-title mt-0">Cais Eco Residência</h2>
